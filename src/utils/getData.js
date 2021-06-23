@@ -5,6 +5,7 @@ const getData = async (id) => {
   try {
     const response = await fetch(apiURl);
     const data = await response.json();
+    console.log(API);
     return data.results[0];
   } catch (error) {
     console.log('Fetch Error', error);
